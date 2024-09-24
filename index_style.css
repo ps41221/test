@@ -1,0 +1,320 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* navbar */
+.navbar {
+  background: linear-gradient(to bottom right ,	#FFECEC,#FFD2D2);
+  color:#5B5B5B;
+	padding: 20px 24px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar .logo {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+}
+
+.navbar .logo a {
+	display: block;
+	position: relative;
+	width: 98px;
+	height: 40px;
+}
+
+.navbar .logo img {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate3d(0, -50%, 0);
+	max-width: 100%;
+	width: auto;
+	max-height: 100%;
+	height: auto;
+}
+
+.navbar .logo p {
+	padding-top: 2px;
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 1px solid #000;
+	font-weight: 900;
+}
+
+.navbar .list ul {
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+}
+
+.navbar .list ul li:not(:last-child) {
+	margin-right: 12px;
+	padding-right: 12px;
+	border-right: 1px solid #333;
+}
+
+.navbar .list ul li a {
+	color: #5B5B5B;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+		padding: 16px 18px;
+		flex-wrap: wrap;
+  }
+
+	.navbar .list ul {
+		margin-top: 12px;
+		font-size: 16px;
+		flex-wrap: wrap;
+	}
+}
+
+/* banner */
+.banner {
+	position: relative;
+	background-image: url('https://imgur.com/AsTEQNo.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+.banner::before {
+	display: block;
+	padding-bottom: 760px;
+	background-color: rgb(0 0 0 / 30%);
+	content: '';
+}
+
+.banner .content {
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	z-index: 1;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	max-width: 840px;
+	width: 100%;
+}
+
+.banner .content .title {
+	font-size: 60px;
+	font-weight: 900;
+}
+
+/* merit */
+.merit .tip {
+	background: linear-gradient(to top left, #FFB5B5,	#B87070);
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.merit .tip p {
+	padding: 28px 32px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.merit .list {
+	padding: 30px;
+}
+
+.merit .list > ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.merit .list .col-6 {
+	width: calc((100% - 30px) / 2);
+}
+
+.merit .list .card {
+	border-radius: 10px;
+	padding: 30px;
+	font-size: 20px;
+	text-align: center;
+	box-shadow: 0 3px 12px 2px rgb(0 0 0 / 10%);
+}
+
+.merit .list .card .title {
+	margin-bottom: 12px;
+	font-size: 28px;
+	font-weight: 900;
+}
+
+.merit .list .card b {
+	font-weight: 900 !important;
+}
+
+.merit .list .card ul {
+	text-align: left;
+}
+
+.merit .list .card ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+	.merit .list .col-6 {
+		width: 100%;
+	}
+}
+
+/* appeal */
+.appeal {
+	padding: 48px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.appeal .photo {
+	position: relative;
+	background-image: url('https://www.hontai.com.tw/18pages/friendly-services/styles/images/index/appeal-main-img.jpg');
+	background-size: cover;
+	width: 50%;
+}
+
+.appeal .photo::before {
+	display: block;
+	padding-bottom: 100%;
+	content: '';
+}
+
+.appeal .list {
+	padding: 32px;
+	width: 50%;
+}
+
+.appeal .list .title {
+	font-size: 28px;
+	font-weight: 900;
+}
+
+.appeal .list ul {
+	margin-top: 12px;
+}
+
+.appeal .list ul li:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.appeal .list ul .b {
+	margin-bottom: 4px;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+@media screen and (max-width: 700px) {
+	.appeal {
+		padding: 30px;
+		flex-wrap: wrap;
+	}
+
+	.appeal .photo {
+		width: 100%;
+	}
+
+	.appeal .list {
+		padding: 32px 12px;
+		width: 100%;
+	}
+}
+
+/* footer */
+.footer {
+	padding: 20px 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(to top left, #FFB5B5,	#B87070);
+	color: #fff;
+}
+
+.footer .logo {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+}
+
+.footer .logo a {
+	display: block;
+	position: relative;
+	width: 98px;
+	height: 40px;
+}
+
+.footer .logo img {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate3d(0, -50%, 0);
+	max-width: 100%;
+	width: auto;
+	max-height: 100%;
+	height: auto;
+}
+
+.footer .logo p {
+	padding-top: 2px;
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 1px solid #fff;
+	font-weight: 900;
+}
