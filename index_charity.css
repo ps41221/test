@@ -158,6 +158,17 @@ table {
 	content: '';
 }
 
+@media screen and (max-width: 700px) {
+	.half {
+		flex-direction: column;
+		max-width: 90%;
+	}
+
+	.half .content, .half .photo {
+		width: 100%;
+	}
+}
+
 /* outline */
 .outline {
 	padding-bottom: 60px;
@@ -169,4 +180,10 @@ table {
 .outline .b {
 	font-size: 32px;
 	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+	.outline {
+		max-width: 90%;
+	}
 }
