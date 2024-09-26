@@ -136,7 +136,7 @@ table {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #FDF9BA;
+	background-color: #FFECEC;
 	width: 50%;
 	text-align: center;
 }
@@ -148,7 +148,7 @@ table {
 
 .half .photo {
 	width: 50%;
-	background-image: url('https://static.wixstatic.com/media/86cb94_5dffd3c7abdd444b938a89c0753694b4~mv2_d_4009_3581_s_4_2.jpg/v1/fill/w_824,h_1110,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/86cb94_5dffd3c7abdd444b938a89c0753694b4~mv2_d_4009_3581_s_4_2.jpg');
+	background-image: url('https://imgur.com/02B864I.jpg');
 	background-size: cover;
 }
 
@@ -156,17 +156,6 @@ table {
 	display: block;
 	padding-bottom: 110%;
 	content: '';
-}
-
-@media screen and (max-width: 700px) {
-	.half {
-		flex-direction: column;
-		max-width: 90%;
-	}
-
-	.half .content, .half .photo {
-		width: 100%;
-	}
 }
 
 /* outline */
@@ -180,10 +169,4 @@ table {
 .outline .b {
 	font-size: 32px;
 	margin-bottom: 10px;
-}
-
-@media screen and (max-width: 700px) {
-	.outline {
-		max-width: 90%;
-	}
 }

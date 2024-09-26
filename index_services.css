@@ -136,7 +136,7 @@ table {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #FDF9BA;
+	background-color: #FFECEC;
 	width: 50%;
 	text-align: center;
 }
@@ -148,7 +148,7 @@ table {
 
 .half .photo {
 	width: 50%;
-	background-image: url('https://images.unsplash.com/photo-1726307647784-2b43fe14eb7c?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+	background-image: url('https://imgur.com/KO0vvaY.jpg');
 	background-size: cover;
 }
 
@@ -156,17 +156,6 @@ table {
 	display: block;
 	padding-bottom: 110%;
 	content: '';
-}
-
-@media screen and (max-width: 700px) {
-	.half {
-		flex-direction: column;
-		max-width: 90%;
-	}
-
-	.half .content, .half .photo {
-		width: 100%;
-	}
 }
 
 /* outline */
@@ -180,10 +169,4 @@ table {
 .outline .b {
 	font-size: 32px;
 	margin-bottom: 10px;
-}
-
-@media screen and (max-width: 700px) {
-	.outline {
-		max-width: 90%;
-	}
 }
